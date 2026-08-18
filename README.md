@@ -1,2 +1,34 @@
 # -ISY503-Assessment-3-Sentiment-Analysis
 ISY503 Assessment 3 group project: Amazon Review Sentiment Analysis using NLP, neural networks and a Streamlit web application.
+
+## Model Development and Evaluation
+
+Two neural network models were developed and compared:
+
+- Baseline Neural Network
+- Bidirectional LSTM (BiLSTM)
+
+Both models were evaluated using the same validation data.
+
+### Model Selection
+
+| Model | Validation Accuracy |
+|---|---:|
+| Baseline Neural Network | 81.32% |
+| BiLSTM | 80.14% |
+
+The baseline model was selected because it achieved slightly better validation performance.
+
+### Final Model Performance
+
+The selected baseline model achieved:
+
+- Test accuracy: 79.97%
+- Test loss: 0.4218
+- Correct predictions: 942 out of 1,178
+- Misclassified reviews: 236
+- Negative recall: 82%
+- Positive recall: 78%
+
+Error analysis showed that the model had more difficulty with negation, mixed sentiment and context. For example, “It is not bad for the price” was incorrectly classified as negative.
+
