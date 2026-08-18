@@ -57,6 +57,13 @@ streamlit run app.py
 
 The application allows a user to enter a new product review, select Analyse Sentiment, and receive a Positive or Negative prediction with a confidence score.
 
+## Team Members
+
+- Andrea Esthefania Zuluaga Toro – A00139192
+- Monserrat Marquez Romero – A00156321
+- Diana Luz Lozano Velasco – A00140612
+
+
 
 
 
