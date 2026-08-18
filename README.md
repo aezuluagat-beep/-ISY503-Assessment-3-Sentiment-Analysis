@@ -39,3 +39,26 @@ The selected baseline model achieved:
 
 Error analysis showed that the model had more difficulty with negation, mixed sentiment and context. For example, “It is not bad for the price” was incorrectly classified as negative.
 
+
+DIANA
+
+
+## How to Run the Application
+
+Required project files:
+- app.py
+- sentiment_model.keras
+- tokenizer.json
+- model_config.json
+
+Run the Streamlit application with:
+
+streamlit run app.py
+
+The application allows a user to enter a new product review, select Analyse Sentiment, and receive a Positive or Negative prediction with a confidence score.
+
+
+
+
+
+
