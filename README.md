@@ -7,6 +7,9 @@ This project develops a Natural Language Processing sentiment analysis system fo
 
 The system classifies product reviews as positive or negative using neural network models. The project includes data preparation, text encoding, model comparison and evaluation, error analysis, and a Streamlit web application for testing new reviews.
 
+MONSERRAT
+
+
 
 ## Model Development and Evaluation
 
@@ -19,25 +22,32 @@ Both models were evaluated using the same validation data.
 
 ### Model Selection
 
-| Model | Validation Accuracy |
-|---|---:|
-| Baseline Neural Network | 81.32% |
-| BiLSTM | 80.14% |
+| Model | Validation Accuracy | Validation Loss |
+|---|---:|---:|
+| Baseline Neural Network | 79.88% | 0.4264 |
+| BiLSTM | 78.95% | 0.4641 |
 
-The baseline model was selected because it achieved slightly better validation performance.
+The baseline model was selected because it achieved slightly higher validation accuracy and lower validation loss.
 
 ### Final Model Performance
 
 The selected baseline model achieved:
 
-- Test accuracy: 79.97%
-- Test loss: 0.4218
-- Correct predictions: 942 out of 1,178
-- Misclassified reviews: 236
-- Negative recall: 82%
-- Positive recall: 78%
+- Test accuracy: 80.05%
+- Test loss: 0.4151
+- Correct predictions: 943 out of 1,178
+- Misclassified reviews: 235
+- Negative recall: 86%
+- Positive recall: 74%
 
-Error analysis showed that the model had more difficulty with negation, mixed sentiment and context. For example, “It is not bad for the price” was incorrectly classified as negative.
+The confusion matrix was:
+
+|  | Predicted Negative | Predicted Positive |
+|---|---:|---:|
+| Actual Negative | 503 | 80 |
+| Actual Positive | 155 | 440 |
+
+The model identified negative reviews more effectively than positive reviews. Error analysis also showed difficulties with negation, mixed sentiment and context.
 
 
 DIANA
