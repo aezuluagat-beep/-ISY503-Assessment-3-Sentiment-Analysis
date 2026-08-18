@@ -1,6 +1,13 @@
 # -ISY503-Assessment-3-Sentiment-Analysis
 ISY503 Assessment 3 group project: Amazon Review Sentiment Analysis using NLP, neural networks and a Streamlit web application.
 
+## Project Overview
+
+This project develops a Natural Language Processing sentiment analysis system for Amazon product reviews.
+
+The system classifies product reviews as positive or negative using neural network models. The project includes data preparation, text encoding, model comparison and evaluation, error analysis, and a Streamlit web application for testing new reviews.
+
+
 ## Model Development and Evaluation
 
 Two neural network models were developed and compared:
