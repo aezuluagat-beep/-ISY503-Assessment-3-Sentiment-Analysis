@@ -50,8 +50,25 @@ The confusion matrix was:
 The model identified negative reviews more effectively than positive reviews. Error analysis also showed difficulties with negation, mixed sentiment and context.
 
 
-DIANA
-
+## Deployment, Limitations and Ethics
+ 
+A Streamlit web application was created to allow users to enter a product review and receive a Positive or Negative prediction.
+ 
+The application uses the saved model, tokenizer and preprocessing settings from the final model. It also displays a confidence score.
+ 
+The final demonstration was accessed through a temporary Cloudflare tunnel.
+ 
+### Limitations and Ethical Considerations
+ 
+The model has several limitations:
+ 
+- positive and negative labels can include subjective human decisions;
+- negation and mixed sentiment can be difficult for the model;
+- the dataset contains only four Amazon product categories;
+- confidence does not guarantee that a prediction is correct;
+- the final model identified negative reviews more effectively than positive reviews, with recall of 86% for negative reviews and 74% for positive reviews.
+ 
+These results show that performance is not identical across the two sentiment classes. Model predictions should therefore be interpreted carefully and used as support rather than treated as definitive judgements.
 
 ## How to Run the Application
 
