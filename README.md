@@ -7,9 +7,30 @@ This project develops a Natural Language Processing sentiment analysis system fo
 
 The system classifies product reviews as positive or negative using neural network models. The project includes data preparation, text encoding, model comparison and evaluation, error analysis, and a Streamlit web application for testing new reviews.
 
-MONSERRAT
-
-
+## Data Preparation and Preprocessing 
+ 
+The project used the Amazon product review dataset linked in the assessment brief. 
+ 
+The original dataset contained 8,000 labelled reviews: 
+- 4,000 positive 
+- 4,000 negative 
+ 
+The reviews came from four categories: books, DVD, electronics, and kitchen & housewares. 
+ 
+The preprocessing steps included: 
+- removing duplicate reviews; 
+- removing reviews with fewer than three words; 
+- converting text to lowercase; 
+- removing punctuation and extra spaces. 
+ 
+After cleaning, 7,852 reviews remained. 
+ 
+The final dataset was divided into: 
+- 5,496 training reviews 
+- 1,178 validation reviews 
+- 1,178 test reviews 
+ 
+The text was tokenised using a vocabulary of 10,000 words and padded or truncated to 200 tokens. 
 
 ## Model Development and Evaluation
 
